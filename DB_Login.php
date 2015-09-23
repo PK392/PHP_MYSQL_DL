@@ -5,7 +5,7 @@ $password=" ";
 $dbname="COMPANY";
 
 //Create a connection 
-$conn= new mysql($servername,$username,$password);
+$conn=mysql($servername,$username,$password);
 $dconn= mysql_select_db($dbname,$conn) ;
 
 
