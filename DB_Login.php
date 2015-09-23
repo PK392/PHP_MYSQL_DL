@@ -19,6 +19,6 @@ echo "Connected Successfully";
 
 if ($dconn->connect_error)
 {
-	die("Couldnot Connect to dataabse: .$dconn->connect-error")
+	die("Couldnot Connect to dataabse: .$dconn->connect-error");
 }
 ?>
