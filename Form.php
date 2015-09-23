@@ -16,7 +16,7 @@ while($data=mysql_fetch_array($sql))
 	//Running a loop all contents in the Mysql Table
 	echo '<tr>';
 	echo '<td>.$data['Dept_Id'] </td><td>.$data['Dname']</td> 
-	<td>.$data['Desc']</td>';
+	<td>.$data['Description']</td>';
 	echo '</tr>';
 	
 }
