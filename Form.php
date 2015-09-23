@@ -4,7 +4,7 @@
 <form action="<?php $_PHP_SELF ?>" method="POST">
 <?php 
 
-require once(DB_Login.php);
+require once('/var/www/html/DB_Login.php');
 
 $sql=mysql_query("Select * from Department");
 
