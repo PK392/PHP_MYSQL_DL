@@ -15,13 +15,13 @@ while($data=mysql_fetch_array($sql))
 {
 	//Running a loop all contents in the Mysql Table
 	echo '<tr>';
-	echo '<td>.$data['Dept_Id'] </td><td>.$data['Dname']</td> 
-	<td>.$data['Description']</td>';
+	echo '<td>.$data[\'Dept_Id\'] </td> <td>.$data[\'Dname\']</td> 
+	<td>.$data[\'Description\']</td>';
 	echo '</tr>';
 	
 }
 echo'<tr>';
-echo'<td><input type="text" name="Deptid_text"></td><td><input type="text" name="DeptName_text"></td> <td><input type="text" name="Desc_text"></td>';
+echo'<td><input type=\"text\" name=\"Deptid_text\"></td><td><input type=\"text\" name=\"DeptName_text\"></td> <td><input type=\"text\" name=\"Desc_text\"></td>';
 echo'</tr>';
 
 echo '</table>';
@@ -31,9 +31,3 @@ echo'<input type="submit" value="Add_Department">';
 </body>
 </head>
 </html>
-
-
-
-
-
-
