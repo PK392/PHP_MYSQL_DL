@@ -11,12 +11,15 @@ $sql=mysql_query("Select * from Department");
 echo '<table border=1px>';
 echo '<th>DepartmentId</th> <th>Department_Name</th> <th>Description</th>';
 
+$datas=array();
+
 while($data=mysql_fetch_array($sql))
 {
+	$datas[]=$data;
 	//Running a loop all contents in the Mysql Table
 	echo '<tr>';
-	echo '<td>.$data[\'Dept_Id\'] </td> <td>.$data[\'Dname\']</td> 
-	<td>.$data[\'Description\']</td>';
+	echo '<td>.$datas[\'Dept_Id\'] </td> <td>.$datas[\'Dname\']</td> 
+	<td>.$datas[\'Description\']</td>';
 	echo '</tr>';
 	
 }
