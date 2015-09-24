@@ -24,7 +24,7 @@ while($data=mysql_fetch_array($sql))
 	
 }
 echo'<tr>';
-echo'<td><input type=\"text\" name=\"Deptid_text\"></td><td><input type=\"text\" name=\"DeptName_text\"></td> <td><input type=\"text\" name=\"Desc_text\"></td>';
+echo'<td><input type=\"text\" name=\"Dept_Id\"></td><td><input type=\"text\" name=\"Dnamet\"></td> <td><input type=\"text\" name=\"Description\"></td>';
 echo'</tr>';
 
 echo '</table>';
