@@ -21,4 +21,5 @@ if ($dconn->connect_error)
 {
 	die("Couldnot Connect to dataabse: .$dconn->connect-error");
 }
+echo"Connected to Database";
 ?>
