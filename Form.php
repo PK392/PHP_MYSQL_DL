@@ -29,7 +29,7 @@ echo'</tr>';
 
 echo '</table>';
 
-echo'<input type="submit" value="Add_Department">';
+echo'<input type="submit" value="SEND">';
 ?>
 </form>
 </body>
