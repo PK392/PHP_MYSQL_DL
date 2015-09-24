@@ -32,7 +32,15 @@ echo '</table>';
  $Dnametext=mysql_real_escape_string($_POST['DeptName_text']);
  $Desctext=mysql_real_escape_string($_POST['Desc_text']);
  
- $result="INSERT INTO Department('Dept_Id','Dname','Description') values('Didtext','Dnametext','Desctext')";
+ $adddept="INSERT INTO Department('Dept_Id','Dname','Description') values('Didtext','Dnametext','Desctext')";
+ $result = mysql_query($adddept);
+if($result)
+{
+    echo("<br>Input data is succeed");
+} else
+{
+    echo("<br>Input data failed");
+}
 echo'<input type="submit" value="Add_Department">';
 ?>
 </form>
