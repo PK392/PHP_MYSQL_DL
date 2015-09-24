@@ -18,13 +18,13 @@ while($data=mysql_fetch_array($sql))
 	$datas[]=$data;
 	//Running a loop all contents in the Mysql Table
 	echo '<tr>';
-	echo '<td>.$datas[\'Dept_Id\'] </td> <td>.$datas[\'Dname\']</td> 
+	echo '<td>.$datas[\'Dept_Id\'] </td> <td>.$datas[\'Dname\']</td>
 	<td>.$datas[\'Description\']</td>';
 	echo '</tr>';
 	
 }
 echo'<tr>';
-echo'<td><input type=\"text\" name=\"Dept_Id\"></td><td><input type=\"text\" name=\"Dnamet\"></td> <td><input type=\"text\" name=\"Description\"></td>';
+echo'<td><input type=\"text\" name=\"Dept_Id\"></td><td><input type=\"text\" name=\"Dname\"></td> <td><input type=\"text\" name=\"Description\"></td>';
 echo'</tr>';
 
 echo '</table>';
