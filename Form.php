@@ -28,6 +28,11 @@ echo'<td><input type=\"text\" name=\"Deptid_text\"></td><td><input type=\"text\"
 echo'</tr>';
 
 echo '</table>';
+ $Didtext = mysql_real_escape_string($_POST['Deptid_text']);
+ $Dnametext=mysql_real_escape_string($_POST['DeptName_text']);
+ $Desctext=mysql_real_escape_string($_POST['Desc_text']);
+ 
+ $result="INSERT INTO Department('Dept_Id','Dname','Description') values('Didtext','Dnametext','Desctext')";
 echo'<input type="submit" value="Add_Department">';
 ?>
 </form>
