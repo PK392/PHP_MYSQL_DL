@@ -7,7 +7,7 @@
  $Desctext=mysql_real_escape_string($_POST['Description']);
  
  echo('$Didtext');
- echo('Dnametext');
+ echo('$Dnametext');
  
  $adddept="INSERT INTO Department('Dept_Id','Dname','Description') values('Didtext','Dnametext','Desctext')";
  $result = mysql_query($adddept);
