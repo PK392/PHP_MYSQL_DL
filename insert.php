@@ -9,7 +9,7 @@
  echo $Didtext;
  echo $Dnametext;
  
- $adddept="INSERT INTO Department('Dept_Id','Dname','Description') 
+ $adddept="INSERT INTO Department(Dept_Id,Dname,Description) 
 
 values('$Didtext','$Dnametext','$Desctext')";
  $result = mysql_query($adddept);
