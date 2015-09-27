@@ -9,7 +9,9 @@
  echo $Didtext;
  echo $Dnametext;
  
- $adddept="INSERT INTO Department('Dept_Id','Dname','Description') values('Didtext','Dnametext','Desctext')";
+ $adddept="INSERT INTO Department('Dept_Id','Dname','Description') 
+
+values('".$Didtext."','".$Dnametext."','".$Desctext."')";
  $result = mysql_query($adddept);
 if($result)
 {
