@@ -2,9 +2,9 @@
  
  require_once('DB_Login.php');
  
- $Didtext = mysql_real_escape_string($_POST['Dept_Id']);
- $Dnametext=mysql_real_escape_string($_POST['Dname']);
- $Desctext=mysql_real_escape_string($_POST['Description']);
+ $Didtext = mysqli_real_escape_string($_POST['Dept_Id']);
+ $Dnametext= mysqli_real_escape_string($_POST['Dname']);
+ $Desctext= mysqli_real_escape_string($_POST['Description']);
  
  echo $Didtext;
  echo $Dnametext;
