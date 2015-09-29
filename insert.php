@@ -29,7 +29,7 @@ echo"Connected to Database";
  $adddept="INSERT INTO Department(Dept_Id,Dname,Description) 
 
 values($Didtext,'$Dnametext','$Desctext')";
-echo $addept;
+echo $adddept;
  $result = mysql_query($adddept);
 if($result)
 {
