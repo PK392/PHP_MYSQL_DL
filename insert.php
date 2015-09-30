@@ -19,16 +19,16 @@ if ($dconn->connect_error)
 }
 echo"Connected to Database";
  
- $Didtext = mysql_real_escape_string($_GET['Dept_Id']);
- $Dnametext= mysql_real_escape_string($_GET['Dname']);
- $Desctext= mysql_real_escape_string($_GET['Description']);
+ $Didtext = mysql_real_escape_string($_GET['Department_Id']);
+ $Dnametext= mysql_real_escape_string($_GET['Department_name']);
+ $Desctext= mysql_real_escape_string($_GET['Desc']);
  
  echo $Didtext;
  echo $Dnametext;
  
  $adddept="INSERT INTO Department(Dept_Id,Dname,Description) 
 
-values($Didtext,$Dnametext,$Desctext)";
+values('$Didtext','$Dnametext','$Desctext')";
 echo $adddept;
  $result = mysql_query($adddept);
  echo $result;
