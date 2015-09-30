@@ -19,9 +19,9 @@ if ($dconn->connect_error)
 }
 echo"Connected to Database";
  
- $Didtext = mysql_real_escape_string($_POST['Dept_Id']);
- $Dnametext= mysql_real_escape_string($_POST['Dname']);
- $Desctext= mysql_real_escape_string($_POST['Description']);
+ $Didtext = mysql_real_escape_string($_GET['Dept_Id']);
+ $Dnametext= mysql_real_escape_string($_GET['Dname']);
+ $Desctext= mysql_real_escape_string($_GET['Description']);
  
  echo $Didtext;
  echo $Dnametext;
