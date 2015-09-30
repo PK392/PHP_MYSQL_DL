@@ -1,7 +1,7 @@
 <html>
 <head>
 <body>
-<form action="insert.php" method="POST">
+<form action="insert.php" method="GET">
 <?php 
 
 require_once('DB_Login.php');
